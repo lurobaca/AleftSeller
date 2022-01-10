@@ -1,0 +1,90 @@
+<resources>
+
+    <string name="app_name">Seller</string>
+
+    <string name="colones">Colones</string>
+
+    <string name="dolares">Dolares</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_sincronizar">Sincronizar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_reportes">Reportes</string>
+    <string name="title_activity_recupera__pedido">Recupera__pedido</string>
+    <string name="title_activity_recibir">Recibir</string>
+    <string name="title_activity_pedidos_hechos">PedidosHechos</string>
+    <string name="title_activity_pedidos">Pedidos</string>
+    <string name="title_activity_facturar">Facturar</string>
+    <string name="title_activity_opciones_menu">Opciones_menu</string>
+    <string name="title_activity_new_line">New_line</string>
+    <string name="title_activity_info__clientes">Info__clientes</string>
+    <string name="title_activity_enviar">Enviar</string>
+    <string name="title_activity_eliminar">Eliminar</string>
+    <string name="title_activity_detalle__pedido">Detalle_Pedido</string>
+    <string name="title_activity_depositos">Depositos</string>
+    <string name="title_activity_cuentasxcobrar">Cuentasxcobrar</string>
+    <string name="title_activity_clientes">Clientes</string>
+    <string name="title_activity_new_linea">NewLinea</string>
+    <string name="title_activity_detalle_pedido">DetallePedido</string>
+    <string name="title_activity_detalle_pago">DetallePago</string>
+    <string name="title_activity_facturas_cliente">FacturasCliente</string>
+    <string name="title_activity_new__pago">New_Pago</string>
+    <string name="title_activity_pagos_hechos">PagosHechos</string>
+    <string name="title_activity_detallepago">Detallepago</string>
+    <string name="title_activity_detpago">Detpago</string>
+    <string name="title_activity_ftp__manager">Ftp_Manager</string>
+    <string name="title_activity_depositos__hechos">Depositos_Hechos</string>
+    <string name="title_activity_clientes_sin_atender">ClientesSinAtender</string>
+    <string name="title_activity_acerca_de">AcercaDe</string>
+    <string name="title_activity_liquidar">Liquidar</string>
+    <string name="title_activity_selec_facturas">SelecFacturas</string>
+    <string name="title_activity_facturas">Facturas</string>
+    <string name="title_activity_sin_atender__hechos">SinAtender_Hechos</string>
+    <string name="title_activity_liquidacion">Liquidacion</string>
+    <string name="title_activity_gastos">Gastos</string>
+    <string name="title_activity_gastos_en_promo">GastosEnPromo</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_gastos_liquidacion">GastosLiquidacion</string>
+    <string name="title_activity_detalle_gastos_liqu">Gastos</string>
+    <string name="title_activity_gastos_hechos">GastosHechos</string>
+    <string name="title_activity_devoluciones">Devoluciones</string>
+    <string name="title_activity_detalle__devoluciones">Detalle_Devoluciones</string>
+    <string name="title_activity_devoluciones__hechas">Devoluciones_Hechas</string>
+    <string name="title_activity_descuentos">Descuentos</string>
+    <string name="title_activity_detalle_factura">DetalleFactura</string>
+    <string name="title_activity_lineas_xfactura">LineasXFactura</string>
+    <string name="title_activity_rep_facturas">RepFacturas</string>
+    <string name="title_activity_notas_credito__hechas">NotasCredito_Hechas</string>
+    <string name="title_activity_detalle_devolucion">DetalleDevolucion</string>
+    <string name="title_activity_linea_devolucion">LineaDevolucion</string>
+    <string name="title_activity_menu_prueba">MenuPrueba</string>
+    <string name="title_activity_pruebas">Prueba</string>
+    <string name="title_activity_gastos_main">GastosMain</string>
+    <string name="title_activity_analisis">Analisis</string>
+
+    <string name="account_type">com.example.essco.seller.account</string>
+    <string name="provider_authority">com.example.essco.seller</string>
+    <string name="action_sync">Sincronizar</string>
+    <string name="empty_list">No hay datos</string>
+
+    <string name="title_activity_detail">Nuevo gasto</string>
+    <string name="monto_hint">Monto</string>
+    <string name="descripcion_hint">Descripción</string>
+    <string name="adicional_hint">Adicional</string>
+
+
+    <string name="etiqueta_title">Etiqueta</string>
+    <string name="fecha_title">Fecha</string>
+    <string-array name="etiquetas">
+        <item>Comida</item>
+        <item>Transporte</item>
+        <item>Diversión</item>
+    </string-array>
+    <string name="boton">AGREGAR GASTO</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="latitud">latitud</string>
+    <string name="longitud">longitud</string>
+    <string name="parar_actualizaciones">Detener</string>
+    <string name="iniciar_actualizaciones">Obtener Ubicacion</string>
+    <string name="title_activity_datos_clientes">DatosClientes</string>
+</resources>

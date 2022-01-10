@@ -1,0 +1,928 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+
+     >
+
+
+
+      <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    <LinearLayout
+        android:id="@+id/PanelPrincipal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+         android:background="#284072"
+           android:textColor="#ffffff" >
+
+
+		  <LinearLayout
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="horizontal"
+			  android:layout_marginBottom="3dp"
+			  >
+
+
+		  <LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="3dp"
+			>
+
+			  <TextView
+				  android:id="@+id/txtv_CodArti"
+				  android:layout_width="95dp"
+				  android:layout_height="wrap_content"
+				  android:padding="2dp"
+				  android:text="Codigo"
+				  android:textColor="#ffffff"
+				  android:textSize="15sp" />
+
+			  <EditText
+				  android:id="@+id/edtx_CodArti"
+				  android:layout_width="120dp"
+				  android:layout_height="wrap_content"
+				  android:layout_margin="1dp"
+				  android:background="@drawable/rounded_edittext"
+				  android:clickable="false"
+				  android:cursorVisible="false"
+				  android:ems="10"
+				  android:focusable="false"
+				  android:focusableInTouchMode="false"
+				  android:padding="3dp"
+				  android:textAlignment="center"
+				  android:textSize="22sp"></EditText>
+		  </LinearLayout>
+				 <LinearLayout
+					 android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+
+					 android:orientation="horizontal" >
+
+					 <TextView
+						 android:id="@+id/txtv_Existencias"
+						 android:layout_width="40dp"
+						 android:layout_height="wrap_content"
+						 android:padding="2dp"
+						 android:text="Emp"
+						 android:textColor="#ffffff"
+						 android:textSize="15sp" />
+
+					 <EditText
+						 android:id="@+id/edtx_Existencias"
+						 android:layout_width="100dp"
+						 android:layout_height="wrap_content"
+						 android:layout_margin="1dp"
+						 android:background="@drawable/rounded_edittext"
+						 android:clickable="false"
+						 android:cursorVisible="false"
+						 android:ems="10"
+						 android:enabled="true"
+						 android:focusable="false"
+						 android:focusableInTouchMode="false"
+						 android:inputType="number"
+						 android:padding="3dp"
+						 android:textSize="22sp">
+						 >
+
+						 <requestFocus />
+					 </EditText>
+				 </LinearLayout>
+
+			 </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical" >
+
+		   <EditText
+		       android:id="@+id/EText_Descripcion"
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:layout_margin="1dp"
+		      android:background="@drawable/rounded_edittext"
+		       android:clickable="false"
+		       android:cursorVisible="false"
+		       android:focusable="false"
+		       android:focusableInTouchMode="false"
+		       android:gravity="top|left"
+		       android:inputType="textMultiLine"
+		       android:lines="2"
+		       android:minLines="2"
+		       android:padding="3dp"
+		       android:scrollbars="vertical"
+		       android:text="Descripcion"
+		       android:textColor="#000000"
+		       android:textSize="18sp" />
+
+			</LinearLayout>
+
+		   <RadioGroup
+		       android:id="@+id/radioOP"
+		       android:layout_width="match_parent"
+		       android:layout_height="0dp"
+		       android:background="#ffffff"
+		       android:orientation="horizontal"
+		       android:layout_margin="2dp"
+		        >
+<TextView
+			     android:id="@+id/txtv_Tipo"
+			     android:layout_width="100dp"
+			     android:layout_height="wrap_content"
+			     android:text="Tipo"
+			      android:textColor="#000000"
+			      android:paddingLeft="5dp" />
+ <RadioButton
+            android:id="@+id/radioUnidades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unidades"
+               android:checked="true"
+               android:layout_marginRight="30dp"
+
+               android:textColor="#000000"
+            />
+        <RadioButton
+            android:id="@+id/radioCajas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Cajas"
+             android:textColor="#000000"
+        />
+
+
+
+    </RadioGroup>
+
+		   	<LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal" >
+
+		<LinearLayout
+          android:layout_height="30dp"
+          android:layout_width="match_parent"
+           android:visibility="visible"
+           android:orientation="horizontal"
+           android:layout_marginBottom="5dp"
+           >
+
+			<TextView
+				android:id="@+id/txtv_Cant"
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="Cant"
+				android:textColor="#ffffff" />
+
+			<EditText
+			    android:id="@+id/edtx_Cj"
+			    android:layout_width="110dp"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="1dp"
+			    android:background="@drawable/rounded_edittext"
+			    android:ems="10"
+			    android:inputType="number"
+			    android:padding="2dp"
+			    android:textSize="22sp" >
+
+				<requestFocus />
+			</EditText>
+
+				<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+     <TextView
+        android:id="@+id/txtv_Unid"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="Desc"
+        android:textColor="#ffffff"
+				  android:padding="2dp" />
+
+     <EditText
+         android:id="@+id/edtx_Unid"
+         android:layout_width="110dp"
+         android:layout_height="wrap_content"
+         android:background="@drawable/rounded_edittext"
+         android:ems="10"
+         android:textSize="22sp"
+         android:inputType="numberDecimal"
+         android:padding="2dp"
+         android:layout_toRightOf="@+id/textView1"
+         android:clickable="false"
+		 android:cursorVisible="false"
+		 android:focusable="false"
+		 android:focusableInTouchMode="false"
+		 android:layout_margin="1dp">
+
+      </EditText>
+      </LinearLayout>
+         </LinearLayout>
+
+
+
+
+
+	       </LinearLayout>
+
+  			<LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal"
+           android:layout_marginBottom="5dp">
+
+		<LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal" >
+
+
+			<TextView
+				android:id="@+id/txtv_DescFijo"
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="Fijo"
+				android:textColor="#ffffff" />
+
+			<EditText
+			    android:id="@+id/edtx_DescFijo"
+			    android:layout_width="110dp"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="1dp"
+			    android:background="@drawable/rounded_edittext"
+			    android:ems="10"
+			  android:textSize="22sp"
+			    android:inputType="number"
+			    android:padding="2dp" >
+
+			</EditText>
+         </LinearLayout>
+
+
+            <LinearLayout
+             android:layout_height="fill_parent"
+          android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:orientation="horizontal" >
+
+     <TextView
+        android:id="@+id/txtv_DescPromo"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="Prom"
+        android:textColor="#ffffff"
+				  android:padding="2dp" />
+
+     <EditText
+         android:id="@+id/edtx_DesdPromo"
+         android:layout_width="110dp"
+         android:layout_height="wrap_content"
+         android:layout_margin="1dp"
+         android:background="@drawable/rounded_edittext"
+         android:ems="10"
+          android:textSize="22sp"
+         android:inputType="numberDecimal"
+         android:padding="2dp" />
+
+      </LinearLayout>
+
+
+	       </LinearLayout>
+		  <LinearLayout
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_alignParentLeft="true"
+			  android:layout_alignParentTop="true"
+			  android:orientation="horizontal" android:visibility="gone">
+
+			  <EditText
+				  android:id="@+id/edtx_CodBarras"
+				  android:layout_width="110dp"
+				  android:layout_height="wrap_content"
+				  android:ems="10"
+				  android:textSize="22sp"
+				  android:inputType="number"
+				  android:clickable="false"
+				  android:cursorVisible="false"
+				  android:focusable="false"
+				  android:focusableInTouchMode="false"
+				  android:enabled="true"
+				  android:background="@drawable/rounded_edittext"
+				  android:padding="3dp"
+				  android:layout_margin="1dp">
+
+				  <requestFocus />
+			  </EditText>
+
+		  </LinearLayout>
+		  <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal" android:visibility="gone">
+
+		<LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal" >
+
+			 <TextView
+			     android:id="@+id/txtv_CJ"
+			     android:layout_width="95dp"
+			     android:layout_height="wrap_content"
+			     android:text="CJ"
+			      android:textColor="#000000"
+			      android:paddingLeft="5dp"  />
+
+			<EditText
+			    android:id="@+id/edtx_Cjs"
+			    android:layout_width="110dp"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			     android:textSize="22sp"
+			    android:inputType="number"
+			    android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:enabled="true"
+              android:background="@drawable/rounded_edittext"
+         android:padding="3dp"
+         android:layout_margin="1dp">
+
+				<requestFocus />
+			</EditText>
+         </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+     <TextView
+         android:id="@+id/txtv_Un"
+            android:layout_width="75dp"
+         android:layout_height="wrap_content"
+         android:text="Unid"
+          android:textColor="#000000"
+          android:paddingLeft="5dp"  />
+
+     <EditText
+         android:id="@+id/edtx_Un"
+         android:layout_width="110dp"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/textView1"
+         android:ems="10"
+           android:textSize="22sp"
+         android:inputType="number"
+         android:clickable="false"
+         android:cursorVisible="false"
+         android:focusable="false"
+         android:focusableInTouchMode="false"
+         android:enabled="true"
+         android:background="@drawable/rounded_edittext"
+         android:padding="3dp"
+         android:layout_margin="1dp">
+
+      </EditText>
+      </LinearLayout>
+
+	       </LinearLayout>
+
+  							<LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:orientation="horizontal" android:visibility="gone">
+
+			 <TextView
+			     android:id="@+id/txtv_Inventario"
+			          android:layout_width="75dp"
+			     android:layout_height="wrap_content"
+			     android:text="Inventario"
+			      android:textColor="#000000"
+			      android:paddingLeft="5dp"/>
+
+			<EditText
+				android:id="@+id/edtx_Inventario"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:ems="10"
+				  android:textSize="22sp"
+				      android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:enabled="true"
+              android:background="@drawable/rounded_edittext"
+         android:padding="3dp"
+         android:layout_margin="1dp">
+				<requestFocus />
+			</EditText>
+         </LinearLayout>
+  			 <LinearLayout
+  			     android:layout_width="match_parent"
+  			     android:layout_height="wrap_content"
+  			     android:orientation="horizontal"
+
+
+  			     android:layout_margin="2dp">
+
+  			     <Button
+  			         android:id="@+id/btn_CALCULAR"
+  		      android:background="@drawable/mybutton"
+               android:textColor="#000000"
+                   android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_margin="1dp"
+
+  			         android:layout_weight="0.36"
+  			         android:onClick="CALCULA"
+  			         android:text="CALCULAR" />
+
+  			     <Button
+  			         android:id="@+id/btn_Agregar"
+  			     android:background="@drawable/mybutton"
+               android:textColor="#000000"
+                   android:layout_width="110dp"
+                android:layout_height="45dp"
+                            android:layout_margin="1dp"
+  			         android:layout_weight="0.33"
+  			         android:onClick="AGREGAR"
+  			         android:text="AGREGAR" />
+
+  			 </LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/txtv_TOTAL"
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="TOTAL ₵"
+				android:textColor="#ffffff" />
+
+
+			<EditText
+				android:id="@+id/edtx_TOTAL"
+				android:layout_width="264dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="1dp"
+				android:layout_toRightOf="@+id/textView1"
+				android:background="@drawable/rounded_edittext"
+				android:clickable="false"
+				android:cursorVisible="false"
+				android:ems="10"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:padding="3dp"
+				android:textSize="24sp"></EditText>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/txtv_SUBTOTAL"
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="SUBTOTAL ₵"
+				android:textColor="#ffffff" />
+
+
+			<EditText
+				android:id="@+id/edtx_SUBTOTAL"
+				android:layout_width="264dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="1dp"
+				android:layout_toRightOf="@+id/textView1"
+				android:background="@drawable/rounded_edittext"
+				android:clickable="false"
+				android:cursorVisible="false"
+				android:ems="10"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:padding="3dp"
+				android:textSize="24sp"></EditText>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/txtv_PRECIO"
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="PRECIO ₵"
+				android:textColor="#ffffff" />
+
+			<EditText
+				android:id="@+id/edtx_PRECIO"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="1dp"
+				android:layout_toRightOf="@+id/textView1"
+				android:background="@drawable/rounded_edittext"
+				android:clickable="false"
+				android:cursorVisible="false"
+				android:ems="10"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:padding="3dp"
+				android:textSize="22sp"></EditText>
+
+			<TextView
+				android:id="@+id/txtv_IVI"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="I.V.I"
+				android:textColor="#ffffff"
+				android:textSize="14sp" />
+
+			<EditText
+				android:id="@+id/edtx_PRECIOconIV"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="1dp"
+				android:layout_toRightOf="@+id/textView1"
+				android:background="@drawable/rounded_edittext"
+				android:clickable="false"
+				android:cursorVisible="false"
+				android:ems="10"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:padding="3dp"
+				android:textSize="22sp"></EditText>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/txtv_Sugerido"
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+
+				android:padding="2dp"
+				android:text="P SUG ₵"
+				android:textColor="#ffffff" />
+
+			<EditText
+				android:id="@+id/edtx_PrecSug"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="1dp"
+				android:background="@drawable/rounded_edittext"
+				android:clickable="false"
+				android:cursorVisible="false"
+				android:ems="10"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:padding="3dp"
+				android:textSize="22sp"></EditText>
+
+			<TextView
+				android:id="@+id/txtv_DES"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="Desc"
+				android:textColor="#ffffff"
+				android:textSize="14sp" />
+
+			<EditText
+				android:id="@+id/edtx_PrecSugConDesc"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="1dp"
+				android:layout_toRightOf="@+id/textView1"
+				android:background="@drawable/rounded_edittext"
+				android:clickable="false"
+				android:cursorVisible="false"
+				android:ems="10"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:padding="3dp"
+				android:textSize="22sp"></EditText>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/txtv_MonDesc"
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+
+				android:padding="2dp"
+				android:text="DESCTO ₵"
+				android:textColor="#ffffff" />
+
+			<EditText
+				android:id="@+id/edtx_MonDesc"
+				android:layout_width="264dp"
+				android:layout_height="wrap_content"
+				android:layout_margin="1dp"
+				android:layout_toRightOf="@+id/textView1"
+				android:background="@drawable/rounded_edittext"
+				android:clickable="false"
+				android:cursorVisible="false"
+				android:ems="10"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:padding="3dp"
+				android:textSize="22sp"></EditText>
+		</LinearLayout>
+
+		<LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+		<LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/txtv_imp"
+				android:layout_width="95dp"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="Imp"
+				android:textColor="#ffffff" />
+
+			<EditText
+			    android:id="@+id/edtx_imp"
+			    android:layout_width="110dp"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:inputType="number"
+			          android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:enabled="true"
+                android:background="@drawable/rounded_edittext"
+         android:padding="3dp"
+         android:layout_margin="1dp"
+           android:textSize="22sp">
+>
+
+				<requestFocus />
+			</EditText>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/txtv_MonImp"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+
+					android:padding="2dp"
+					android:text="I.V ₵"
+					android:textColor="#ffffff" />
+
+				<EditText
+					android:id="@+id/edtx_MonImp"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="1dp"
+					android:layout_toRightOf="@+id/textView1"
+					android:background="@drawable/rounded_edittext"
+					android:clickable="false"
+					android:cursorVisible="false"
+					android:ems="10"
+					android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:padding="3dp"
+					android:textSize="22sp"></EditText>
+			</LinearLayout>
+         </LinearLayout>
+
+
+
+
+           </LinearLayout>
+
+
+
+
+		<LinearLayout
+                     android:id="@+id/PanelModifcar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+         android:layout_margin="2dp"
+
+                android:padding="2dp">
+
+
+
+      <Button
+          android:id="@+id/btn_Eliminar"
+ 		  android:background="@drawable/mybutton"
+          android:textColor="#000000"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_margin="1dp"
+          android:onClick="ELIMINAR"
+          android:text="ELIMINAR" />
+
+
+      </LinearLayout><LinearLayout
+		android:id="@+id/PanelAnalisis"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="2dp">
+		<Button
+			android:id="@+id/btn_Analizar"
+			android:background="@drawable/mybutton"
+			android:textColor="#000000"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:layout_margin="1dp"
+			android:onClick="Analizar"
+			android:text="Analizar" />
+	</LinearLayout>
+
+
+
+
+
+			<HorizontalScrollView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout
+					android:id="@+id/PanelPrincipa22"
+					android:layout_width="fill_parent"
+					android:layout_height="500dp"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentTop="true"
+					android:orientation="horizontal"
+					android:background="#284072"
+					android:textColor="#ffffff" >
+
+					<ListView
+						android:id="@android:id/list"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:background="#ffffff"
+						android:paddingBottom="10dp"
+						android:scrollbars="vertical"
+						android:textColor="#000000"></ListView>
+
+				</LinearLayout>
+
+			</HorizontalScrollView>
+
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:background="#284072"
+			android:orientation="horizontal"
+			android:textColor="#000000"
+			android:id="@+id/linearLayout"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentStart="true"
+			android:drawableTop="@android:color/black"
+			android:layout_alignParentLeft="true">
+
+			<Button
+				android:id="@+id/btn_Nuevo11"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_margin="1dp"
+				android:background="@drawable/mybutton"
+				android:onClick="NuevaLinea"
+				android:visibility="invisible"
+				android:text="AGREGAR"
+				android:textColor="#000000"
+				android:padding="3dp"
+
+				android:textSize="15sp" />
+
+			<TextView
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="TOTAL : ₵"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#ffffff"
+				android:textSize="22sp"/>
+
+			<TextView
+				android:id="@+id/TXT_MONTO"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.01"
+				android:gravity="center"
+				android:padding="2dp"
+				android:text="0"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#ffffff"
+				android:textSize="24sp" />
+
+
+
+
+		</LinearLayout>
+       	 <LinearLayout
+       	     android:id="@+id/PanelFoto"
+       	     android:layout_width="match_parent"
+       	     android:layout_height="wrap_content"
+       	     android:orientation="horizontal"
+       	     android:padding="2dp"
+			 android:visibility="gone"
+       	     android:textColor="#000000" >
+
+       	     <ImageView
+       	         android:id="@+id/img_Articulo"
+       	         android:layout_width="match_parent"
+       	         android:layout_height="100dp"
+       	         android:background="#ffffff"
+       	          />
+
+
+
+		  </LinearLayout>
+
+  </LinearLayout>
+
+
+
+
+  </ScrollView>
+
+
+
+
+</RelativeLayout>

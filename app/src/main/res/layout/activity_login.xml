@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:textColor="#ffffff"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/txtv_Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Usuario"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/EdidT_Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="20"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:padding="5dp"
+            android:text="Agente"
+            android:textColor="#000000"
+            android:textColorHint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtv_Clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Clave"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <!--<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:elevation="21dp"
+            android:padding="5dp"
+            android:textColorHint="#000000"
+
+            app:hintTextAppearance="@style/Hint"
+            tools:hintTextAppearance="@style/Hint">-->
+
+        <EditText
+            android:id="@+id/EdidT_Clave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="@drawable/rounded_edittext"
+            android:ems="30"
+            android:hint="Clave"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#8e8c8c" />
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.00">
+
+            <Button
+                android:id="@+id/btn_Aceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.53"
+                android:background="@drawable/mybutton"
+                android:onClick="IniciarSesion"
+                android:text="Aceptar"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_Cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.53"
+
+                android:background="@drawable/mybutton"
+                android:onClick="Cancelar"
+                android:text="Cancelar"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/InfoVersiones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.39"
+        android:text="INFO OBTENIDA POR CODIGO"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/Version"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/InfoVersiones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="LUIS ROBERTO BASTOS CASTILLO \n E-mail: lurobaca@gmail.com \n Tel:8880-1662"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+
+
+    <CheckBox
+        android:id="@+id/ckBox_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Version"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginLeft="159dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:text="OnLine"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

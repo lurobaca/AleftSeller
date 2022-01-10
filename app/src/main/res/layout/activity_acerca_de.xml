@@ -1,0 +1,435 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2FBFF"
+    tools:context="${relativePackage}.${activityClass}" >
+   <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        android:orientation="vertical"
+        android:textColor="#ffffff" >
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+
+              android:background="@drawable/layout_redondeado_top"
+            android:orientation="horizontal"
+            android:textColor="#000000"
+            android:padding="5dp"
+  
+           >
+
+                <TextView
+                    android:id="@+id/txt_NombreCliente"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_weight="0.49"
+                    android:text="Nombre"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_NombreCliente"
+                android:layout_width="257dp"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:text="Seller" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+
+            android:background="#032A53"
+            android:orientation="horizontal"
+            android:textColor="#000000" 
+           android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_CedulaCliente"
+                   android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.05"
+                android:text="Version"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_CedulaCliente"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:text="11/08/2017" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#032A53"
+            android:orientation="horizontal"
+            android:textColor="#000000"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/txt_RespTributarioCliente"
+             android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="Creado"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_RespTributarioCliente"
+                android:layout_width="257dp"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:text="Luis Roberto Bastos Castillo" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#032A53"
+            android:orientation="horizontal"
+            android:textColor="#000000" 
+           android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/txt_UvisitaCliente"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.07"
+                android:text="Telefonos"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_UvisitaCliente"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:text="8880-1662/2669-5597" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#032A53"
+            android:orientation="horizontal"
+            android:textColor="#000000" 
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_CreditoCliente"
+                    android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="E-mail"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_CreditoCliente"
+                android:layout_width="257dp"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:text="lurobaca@gmail.com" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#032A53"
+            android:orientation="horizontal"
+            android:textColor="#000000" 
+            android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txt_Telefono1Cliente"
+                         android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_weight="0.49"
+                    android:text="Email2"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_Telefono1Cliente"
+                android:layout_width="257dp"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:text="ilepilep@hotmail.com" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#032A53"
+            android:orientation="horizontal"
+            android:textColor="#000000" 
+           android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_Telefono2Cliente"
+                     android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="Web"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_Telefono2Cliente"
+                android:layout_width="257dp"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:text="www.essco.com" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#032A53"
+            android:orientation="horizontal"
+            android:textColor="#000000" 
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_CorreoCliente"
+                     android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="Empresa"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_CorreoCliente"
+                android:layout_width="257dp"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:text="EASY SOFTWARE  SOLUTIONS COMPANY" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#032A53"
+            android:orientation="vertical"
+            android:textColor="#000000" 
+          android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_DireccionCliente"
+                 android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="Detalle"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_DireccionCliente"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:minLines="5"
+                android:padding="2dp"
+                android:scrollbars="vertical"
+                android:text="Seller es el sistema para mobiles en Android, este sistema es parte del parquete Seller , por lo que debe usarse en conjunto a Sincro Cliente y Server para dar un obtimo resultado"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#032A53"
+            android:orientation="vertical"
+            android:textColor="#000000"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_requicitos"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="Requicitos"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edit_Requicitos"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:minLines="5"
+                        android:padding="2dp"
+                        android:scrollbars="vertical"
+                        android:text="Sistema Operativo Android 5.0.1\n 1GB Ram \nProcesador de doble núcleo de 1.2GHz \nPantalla tactil 480 x 800 pixels, 4.3 pulgadas"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+
+                          android:background="@drawable/layout_redondeado_bottom"
+            android:orientation="vertical"
+            android:textColor="#000000"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/txt_TerminosYCondiciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="Condiciones"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+                          <EditText
+                              android:id="@+id/edit_TerminosYCondiciones"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="1dp"
+                              android:layout_marginBottom="5dp"
+                              android:background="@drawable/rounded_edittext"
+                              android:clickable="false"
+                              android:cursorVisible="false"
+                              android:enabled="false"
+                              android:focusable="false"
+                              android:focusableInTouchMode="false"
+                              android:gravity="top|left"
+                              android:inputType="textMultiLine"
+                              android:lines="8"
+                              android:minLines="8"
+                              android:padding="2dp"
+
+                              android:scrollbars="vertical"
+                              android:text="SELLER Y SU CODIGO FUENTE ES PROPIEDAD DE LUIS ROBERTO BASTOS CASTILLO CEDULA 603820988, EN CASO DE QUERER ADQUIRIR O VENDER EL PRODUCTO DEBEN COMUNICARSE CON LUIS ROBERTO BASTOS CASTILLO AL NUMERO 8880-1662 O A LOS CORREOS lurobaca@gmail.com ó ilepilep@hotmail.com"
+                              android:textColor="#000000"
+                              android:textSize="14sp" />
+
+        </LinearLayout>
+  </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,415 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+         android:background="#284072"
+          android:padding="5dp">
+         
+
+   <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+          >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" 
+            android:background="#284072">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+       android:background="#284072"
+    android:orientation="horizontal"
+    android:textColor="#000000" >
+
+ 
+
+    <TextView
+        android:id="@+id/txtv_PostFecha"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.81"
+        android:text="Desde"
+        android:textColor="#ffffff" android:visibility="gone"/>
+<CheckBox
+                   android:id="@+id/Cb_Pedidos"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:button="@drawable/check_true"
+                   android:text="Pedidos"
+                         android:checked="true"
+                   android:textColor="#ffffff"
+                   android:textSize="13sp" />
+    <EditText
+        android:id="@+id/edit_PostFecha"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+         android:background="@drawable/rounded_edittext"
+        android:clickable="false"
+        android:ems="10"
+        android:layout_margin="1dp"
+        android:inputType="date"
+        android:padding="1dp"
+        android:layout_weight="0.27" />
+
+    <Button
+        android:id="@+id/btn_pickDate"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/mybutton"
+        android:text="Fec"
+        android:textColor="#000000" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:padding="1dp"
+   		android:background="#284072">
+    
+       <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal" 
+          android:padding="1dp"
+   		  android:background="#284072">
+               
+        
+           </LinearLayout> 
+        
+        
+  <Button
+      android:visibility="invisible"
+     android:id="@+id/btn_Subir"
+     android:layout_width="fill_parent"
+     android:layout_height="7dp"
+     android:background="@drawable/mybutton"
+     android:onClick="EnviarArchivo"
+     android:text="Enviar Archivos"
+     android:layout_alignParentBottom="true"
+     android:textColor="#000000" />
+  
+   </LinearLayout>
+        
+ <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       >
+       <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout 
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                  <!-- Content here -->
+          
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_Pedidos"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                
+                android:orientation="vertical" >
+       
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/txv_DetalleProgreso1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="0.00"
+            android:lines="2"
+            android:text="Detalle Avance de subida de Pedidos"
+            android:textColor="#ffffff" />
+
+ </LinearLayout>
+ 
+             <LinearLayout
+                 android:id="@+id/linearLayout_Pagos"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+              
+                 android:orientation="vertical" >
+        
+             <ProgressBar
+                 android:id="@+id/progressBar2"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+              
+                 android:indeterminate="false"
+                 android:max="100"
+                 android:minHeight="25dp"
+                 android:minWidth="200dp"
+                 android:progress="1" />
+
+        <TextView
+            android:id="@+id/txv_DetalleProgreso2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="0.00"
+            android:lines="2"
+            android:text="Detalle Avance de subida de Pagos"
+             android:textColor="#ffffff"/>
+
+        </LinearLayout>
+        
+                          <LinearLayout
+                              android:id="@+id/linearLayout_Depositos"
+                              android:layout_width="fill_parent"
+                              android:layout_height="fill_parent"
+                              android:layout_alignParentLeft="true"
+                              android:layout_alignParentRight="true"
+                              android:orientation="vertical" >
+     
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+           
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txv_DetalleProgreso3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="0.00"
+            android:lines="2"
+            android:text="Detalle Avance de subida de Depositos"
+           android:textColor="#ffffff" />
+        
+          </LinearLayout>
+          
+                          
+                                          <LinearLayout
+                     android:id="@+id/linearLayout_GastosPromos"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentRight="true"
+                     android:orientation="vertical" 
+                         
+   android:layout_marginTop="5dp">
+     
+        <ProgressBar
+            android:id="@+id/progressBar7"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+       
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txv_DetalleProgreso7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="0.00"
+            android:lines="2"
+            android:text="Detalle Avance de Gastos "
+            android:textColor="#ffffff" />
+        
+          </LinearLayout>
+          
+                                          
+                                          
+                                          
+       
+                      
+                      
+                      
+                                          
+             <LinearLayout
+                     android:id="@+id/linearLayout_NoVisitasAClientes"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentRight="true"
+                     android:orientation="vertical" >
+     
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+           
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txv_DetalleProgreso4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="0.00"
+            android:lines="2"
+            android:text="Detalle Avance de subida de No Visitas A Clientes"
+             android:textColor="#ffffff" />
+        
+          </LinearLayout>
+        
+          
+                      <LinearLayout
+                     android:id="@+id/linearLayout_ClientesModif"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentRight="true"
+                     android:orientation="vertical" >
+     
+        <ProgressBar
+            android:id="@+id/progressBar8"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+      
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txv_DetalleProgreso8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="0.00"
+            android:lines="2"
+            android:text="Detalle Avance de clientes Modificado"
+            android:textColor="#ffffff" />
+        
+          </LinearLayout>   
+                 
+                      
+                      
+                      
+                                                           
+                      <LinearLayout
+                     android:id="@+id/linearLayout_devoluciones"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentRight="true"
+                     android:orientation="vertical" >
+     
+        <ProgressBar
+            android:id="@+id/progressBar5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+      
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txv_DetalleProgreso5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="0.00"
+            android:lines="2"
+            android:text="Detalle Avance de Devoluciones"
+            android:textColor="#ffffff" />
+        
+          </LinearLayout>   
+          
+                      
+                      
+                      
+                       <LinearLayout
+                     android:id="@+id/linearLayout_Verifica"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentRight="true"
+                     android:orientation="vertical" 
+                          
+   android:layout_marginTop="5dp">
+     
+        <ProgressBar
+            android:id="@+id/progressBar6"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txv_DetalleProgreso6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="0.00"
+            android:lines="2"
+            android:text="Detalle Avance de Verificacion"
+              android:textColor="#ffffff" />
+        
+          </LinearLayout>
+         </LinearLayout>
+      </ScrollView>
+ </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+  
+  
+</RelativeLayout>

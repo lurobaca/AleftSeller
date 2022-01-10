@@ -1,0 +1,727 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+
+        tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+
+        android:orientation="vertical"
+        android:textColor="#000000" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_redondeado_bottom"
+            android:orientation="vertical"
+
+            android:textColor="#000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#284072"
+            android:orientation="horizontal"
+            android:textColor="#000000">
+
+            <TextView
+                android:id="@+id/txtV_Fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:visibility="gone"
+                 />
+
+            <Button
+                android:id="@+id/btn_BuscarPedidos"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/mybutton"
+                android:onClick="PedidosHechos"
+                android:text="Hechos"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_buscarPedidos"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_margin="4dp"
+                android:layout_weight="0.08"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center">
+
+                <requestFocus />
+            </EditText>
+
+
+            <Button
+                android:id="@+id/btn_BuscarClientes"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/mybutton"
+                android:onClick="Clientes"
+
+                android:text="Clientes"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TabHost android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@layout/borde">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+
+                    android:layout_marginTop="0dp"
+                    android:background="#D0E9F8"/>
+
+                <FrameLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@android:id/tabcontent" >
+
+                    <!-- ************************ PESTAÑA DETALLE DEL PEDIDO ******************************-->
+                    <LinearLayout
+                        android:id="@+id/Pedido"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@layout/borde"
+
+                        android:orientation="vertical"
+                        android:textColor="#ffffff">
+
+                        <LinearLayout
+                            android:id="@+id/panel_Pedido"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="0dp"
+                            android:bottomLeftRadius="0dp"
+                            android:bottomRightRadius="0dp"
+                            android:orientation="vertical"
+                            android:topLeftRadius="5dp"
+                            android:topRightRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+
+                                android:background="#284072"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:clickable="false"
+                                android:textColor="#000000">
+
+                                <TextView
+                                    android:id="@+id/txt_NombreCliente"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+
+                                    android:layout_weight="0.49"
+                                    android:hint="Precione CLIENTES para buscar un cliente"
+android:onClick="VerMasInfo"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:id="@+id/Panel_InfoPedido"
+                                android:background="#284072"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="vertical"
+                                android:clickable="false"
+                                android:onClick="VerMasInfo"
+                                android:textColor="#000000">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+
+                                android:background="#284072"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:clickable="false"
+                                android:onClick="VerMasInfo"
+                                android:textColor="#000000">
+
+                                <TextView
+                                    android:id="@+id/txt_Lable_NombreFantacia"
+                                    android:layout_width="190dp"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+                                    android:text="Fantasia:"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/txt_Fantasia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:onClick="VerMasInfo"
+                                android:background="#284072"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:clickable="false"
+                                android:textColor="#000000">
+
+                                <TextView
+                                    android:id="@+id/txt_Lable_CodigoCliente"
+                                    android:layout_width="190dp"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+                                    android:text="Codigo:"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/txt_CodigoCliente"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:onClick="VerMasInfo"
+                                android:background="#284072"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:clickable="false"
+                                android:textColor="#000000">
+
+                                <TextView
+                                    android:id="@+id/txt_Lable_ListaPrecios"
+                                    android:layout_width="190dp"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+                                    android:text="ListaPrecios:"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/txt_ListaPrecios"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:onClick="VerMasInfo"
+                                android:background="#284072"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:clickable="false"
+                                android:textColor="#000000">
+
+                                <TextView
+                                    android:id="@+id/txt_Lable_Credito"
+                                    android:layout_width="190dp"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+                                    android:text="Credito:"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/txt_Credito"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:onClick="VerMasInfo"
+                                android:background="#284072"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:clickable="false"
+                                android:textColor="#000000">
+
+                                <TextView
+                                    android:id="@+id/txt_Lable_CantArticulos"
+                                    android:layout_width="190dp"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+                                    android:text="#Articulos:"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/txt_CantArticulos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:onClick="VerMasInfo"
+                                android:background="#284072"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:clickable="true"
+                                android:textColor="#000000">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:onClick="VerMasInfo"
+                                    android:background="#284072"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal"
+                                    android:clickable="true"
+                                    android:textColor="#000000">
+                                <TextView
+                                    android:id="@+id/txt_Lable_Fecha"
+                                    android:layout_width="190dp"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+                                    android:text="Fecha:"
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/txt_FechaPedido"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:padding="5dp"
+                                    android:onClick="VerMasInfo"
+                                    android:layout_weight="0.49"
+                                    android:hint=""
+
+                                    android:textColor="#ffffff"
+                                    android:textColorHint="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:onClick="VerMasInfo"
+                                    android:background="#284072"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal"
+                                    android:clickable="true"
+                                    android:textColor="#000000">
+
+                                    <TextView
+                                        android:id="@+id/txt_Lable_Hora"
+                                        android:layout_width="190dp"
+                                        android:layout_height="25dp"
+                                        android:padding="5dp"
+                                        android:onClick="VerMasInfo"
+                                        android:layout_weight="0.49"
+                                        android:hint=""
+                                        android:text="Hora:"
+                                        android:textColor="#ffffff"
+                                        android:textColorHint="#ffffff"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                    <TextView
+                                        android:id="@+id/txt_HoraPedido"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:padding="5dp"
+                                        android:onClick="VerMasInfo"
+                                        android:layout_weight="0.49"
+                                        android:hint=""
+
+                                        android:textColor="#ffffff"
+                                        android:textColorHint="#ffffff"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            </LinearLayout>
+
+
+                            <HorizontalScrollView
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+
+                                android:background="#ffffff">
+
+                                <ListView
+                                    android:id="@android:id/list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="#ffffff"
+                                    android:paddingBottom="25dp"></ListView>
+
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ****************************** PESTAÑA PAGO CEQUE ****************************** -->
+                    <LinearLayout android:id="@+id/Comentario"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:textColor="#ffffff"
+
+                        android:background="@layout/borde">
+                        <LinearLayout
+                            android:id="@+id/panel_Comentario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:bottomRightRadius="5dp"
+                            android:bottomLeftRadius="5dp"
+                            android:topLeftRadius="5dp"
+                            android:topRightRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/txt_comentarioPedido"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:layout_weight="0.49"
+                                android:hint="Comentarios"
+                                android:paddingBottom="2dp"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#FFFFFF"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/edtx_Comentario"
+                                android:layout_width="match_parent"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:lines="1"
+
+                                android:minLines="1"
+                                android:gravity="top|left"
+
+                                android:layout_height="100dp"
+                                android:background="@drawable/rounded_edittext"
+                                android:ems="10"
+                                >
+                                <requestFocus />
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       android:background="@drawable/layout_redondeado_top"
+        android:orientation="vertical"
+        android:textColor="#000000"
+        android:id="@+id/linearLayout_TOTALES"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:drawableTop="@android:color/black"
+        android:onClick="VerTotales"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_redondeado_top"
+            android:orientation="horizontal"
+            android:textColor="#000000"
+            android:id="@+id/linearLayout_TOTAL"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:drawableTop="@android:color/black"
+            android:onClick="VerTotales"
+            android:layout_alignParentLeft="true">
+
+      <Button
+            android:id="@+id/btn_Nuevo11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/mybutton"
+            android:onClick="NuevaLinea"
+          android:visibility="invisible"
+            android:text="AGREGAR"
+            android:textColor="#000000"
+            android:padding="3dp"
+
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL : ₵"
+            android:onClick="VerTotales"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+
+                 android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/TXT_MONTO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="0"
+            android:onClick="VerTotales"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_redondeado_top"
+            android:orientation="horizontal"
+            android:textColor="#000000"
+            android:id="@+id/linearLayout_DESCUENTO"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:drawableTop="@android:color/black"
+            android:onClick="VerTotales"
+            android:layout_alignParentLeft="true">
+
+
+
+            <TextView
+                android:id="@+id/txtb_descuento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESCUENTO : ₵"
+                android:onClick="VerTotales"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/TXT_Descuento_MONTO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:onClick="VerTotales"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_redondeado_top"
+            android:orientation="horizontal"
+            android:textColor="#000000"
+            android:id="@+id/linearLayout_SUBTOTAL"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:drawableTop="@android:color/black"
+            android:onClick="VerTotales"
+            android:layout_alignParentLeft="true">
+
+
+            <TextView
+                android:id="@+id/txtb_SubTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBTOTAL : ₵"
+                android:onClick="VerTotales"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/TXT_SubTotal_MONTO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:onClick="VerTotales"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_redondeado_top"
+            android:orientation="horizontal"
+            android:textColor="#000000"
+            android:id="@+id/linearLayout_Impuesto"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:drawableTop="@android:color/black"
+            android:onClick="VerTotales"
+            android:layout_alignParentLeft="true">
+
+
+
+            <TextView
+                android:id="@+id/txtb_Impuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMPUESTO : ₵"
+                android:onClick="VerTotales"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/TXT_impuesto_MONTO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:onClick="VerTotales"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_Nuevo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/oval"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:onClick="NuevaLinea"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_add_white" />
+
+
+    </RelativeLayout>

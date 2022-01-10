@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+     android:background="#ffffff" >
+   
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:textColor="#ffffff" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#284072"
+    android:orientation="horizontal"
+    android:textColor="#ffffff" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLIENTE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edtx_NumDocu"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="0.55"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#284072"
+    android:orientation="horizontal"
+    android:textColor="#000000" >
+
+    <TextView
+        android:id="@+id/txtv_PostFecha"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.14"
+        android:text="Desde"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_PostFecha"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btn_pickDate"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_margin="1dp"
+       android:background="@drawable/mybutton"
+        android:text="Fec"
+        android:textColor="#000000" />
+</LinearLayout>
+ <HorizontalScrollView android:layout_width="fill_parent"
+            android:layout_height="match_parent">    
+<ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:textColor="#000000" >
+        </ListView>
+        </HorizontalScrollView>
+  </LinearLayout>
+</RelativeLayout>

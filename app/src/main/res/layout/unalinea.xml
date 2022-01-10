@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:id="@+id/Box"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:layout_margin="10dp"
+>
+     
+           
+       
+        
+<LinearLayout
+    android:layout_width="500dp"
+    android:layout_height="fill_parent"
+    android:padding="2dp" >
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="122.88"
+        android:text="@+id/label"
+        android:textColor="#ffffff"
+        android:textSize="15sp" >
+    </TextView>
+</LinearLayout>
+</LinearLayout>

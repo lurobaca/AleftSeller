@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#EAF1F6">
+
+<LinearLayout
+  		    android:id="@+id/panel_Cheque"
+  		    android:layout_width="match_parent"
+  		    android:layout_height="wrap_content"
+  		    android:layout_alignParentLeft="true"
+  		    android:layout_alignParentTop="true"
+  		    android:layout_margin="5dp"
+  		    android:background="#284072"
+  		    android:orientation="vertical"
+  		    android:padding="5dp" 
+  		    android:bottomRightRadius="5dp"
+            android:bottomLeftRadius="5dp"
+            android:topLeftRadius="5dp"
+            android:topRightRadius="5dp" >
+		
+  		<LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal" 
+           >
+						
+		<LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal"
+           android:layout_marginBottom="5dp"
+           android:layout_gravity="center_vertical|left"
+            >
+        
+			 <TextView
+			     android:id="@+id/txtv_Cheque"
+			     android:layout_width="90dp"
+			     android:layout_height="wrap_content"
+			     android:text="Cantidad"
+			     android:textColor="#FFFFFF" />
+
+			<EditText
+			    android:id="@+id/edtx_Cheque"
+			    android:layout_width="wrap_content"
+			    android:layout_height="30dp"
+			    android:background="@drawable/rounded_edittext"
+			    android:ems="10"
+			    android:hint="Unidades"
+			    android:inputType="numberDecimal"
+			    android:padding="3dp"
+			    android:textColor="#000000" >
+				
+			</EditText>
+         </LinearLayout>
+         
+	
+    </LinearLayout>
+  		
+  			<LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="horizontal"
+           android:layout_marginBottom="5dp"
+            android:background="#EAF1F6"
+            >	
+  		 <TextView
+        android:id="@+id/txtv_Bancochq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Motivo"
+        android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/spin_Bancos"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="2dp"  
+       />
+     
+
+		
+
+   
+     
+        </LinearLayout>
+  		
+       
+ </LinearLayout>
+</RelativeLayout>

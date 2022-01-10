@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+     android:background="#ffffff" >
+   
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:textColor="#000000" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:orientation="horizontal"
+    android:textColor="#ffffff"
+     android:background="#284072">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLIENTE"
+         android:textColor="#ffffff"
+         android:textSize="15sp"
+         android:layout_margin="2dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edt_buscarPedidos"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_margin="4dp"
+        android:layout_weight="0.55"
+        android:ems="10" 
+        android:padding="2dp"
+          android:background="@drawable/rounded_edittext"
+         android:textColor="#000000">
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/hbox_Unir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unido"
+        android:checked="true"
+        android:textColor="#ffffff" />
+    
+</LinearLayout>
+<LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:textColor="#000000"
+     	 android:background="#284072" >
+ <RadioGroup
+		       android:id="@+id/radioOP"
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:background="#BCDBF1"
+		       android:orientation="horizontal"
+		       android:layout_margin="2dp"
+		        android:textColor="#ffffff"
+		        >
+
+<TextView
+    android:id="@+id/txtv_Tipo"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:text="Buscar Por:"
+    android:textColor="#000000" />
+
+ 		<RadioButton
+            android:id="@+id/rdb_Conse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre" 
+             android:textColor="#000000"
+             android:checked="true"
+            android:layout_marginRight="15dp"
+       />
+        <RadioButton
+            android:id="@+id/rdb_Nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consecutivo" 
+            
+             android:textColor="#000000"
+       />
+
+
+
+    </RadioGroup>
+    
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#284072"
+    android:orientation="horizontal"
+    android:textColor="#000000" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#284072"
+        android:orientation="horizontal"
+        android:textColor="#000000"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/edit_PostFecha"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/rounded_edittext"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:padding="2dp"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/btn_pickDate"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/mybutton"
+            android:text="Desde"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#284072"
+        android:orientation="horizontal"
+        android:textColor="#000000" >
+
+        <EditText
+            android:id="@+id/edit_PostFecha2"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/rounded_edittext"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:padding="2dp"
+            android:textColor="#000000" />
+        <Button
+             android:id="@+id/btn_pickDate2"
+             android:layout_width="50dp"
+             android:layout_height="45dp"
+             android:layout_margin="2dp"
+             android:background="@drawable/mybutton"
+             android:text="Hasta"
+             android:textColor="#000000" />
+
+    </LinearLayout>
+</LinearLayout>
+
+ <HorizontalScrollView android:layout_width="fill_parent"
+            android:layout_height="match_parent">    
+<ListView
+    android:id="@android:id/list"
+
+     android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+             android:background="#ffffff"
+    
+             android:layout_marginBottom="15dp"
+             android:paddingBottom="25dp">
+
+        </ListView>
+        </HorizontalScrollView>
+      </LinearLayout>    
+<LinearLayout
+   android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+          android:background="@drawable/layout_redondeado_top"
+        android:orientation="horizontal"
+        android:textColor="#000000"
+        >
+
+
+    <TextView
+        android:id="@+id/TXTV_TOTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL : ₵"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_margin="2dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TXT_MONTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/hbox_Iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="I.V.I"
+        android:textColor="#ffffff" />
+  </LinearLayout>
+</RelativeLayout>

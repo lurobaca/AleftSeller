@@ -1,0 +1,571 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+     android:background="#EAF1F6"
+     android:padding="5dp"
+          android:textColor="#ffffff" >
+   <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+   
+        
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Inventario"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+           android:background="@drawable/layout_redondeado2"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/progressBar7"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/custom_progressbar_drawable"
+                    android:minHeight="25dp"
+                    android:minWidth="200dp"
+                    android:progress="0"
+                    android:layout_margin="5dp"
+                    android:textColor="#000000"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/txt_Porcent_Progress7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/progressBar7"
+                    android:layout_centerInParent="true"
+                    android:text="0%"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txv_DetalleProgreso7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.00"
+                android:lines="2"
+                android:text="INVENTARIO"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EAF1F6"
+            android:visibility="gone"/>
+            <LinearLayout
+        android:id="@+id/linearLayout_Pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                  <ProgressBar
+                      android:id="@+id/progressBar1"
+                      style="?android:attr/progressBarStyleHorizontal"
+                      android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:layout_marginTop="0dp"
+                                android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+                      android:indeterminate="false"
+                      android:max="100"
+                      android:progressDrawable="@drawable/custom_progressbar_drawable"
+                      android:minHeight="25dp"
+
+                      android:minWidth="200dp"
+                      android:progress="0"
+                      android:layout_margin="5dp"
+
+                      android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id="@+id/txt_Porcent_Progress1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/progressBar1"
+                        android:layout_centerInParent="true"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+
+                        android:textColor="#ffffff" />
+</RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txv_DetalleProgreso1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.00"
+                    android:lines="2"
+                    android:text="ARTICULOS"
+                    android:textColor="#ffffff" />
+ </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+
+            android:background="#EAF1F6"/>
+            
+             <LinearLayout
+        android:id="@+id/linearLayout_Pagos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+                android:background="@drawable/layout_redondeado2"
+        android:orientation="horizontal" >
+                 <RelativeLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     >
+             <ProgressBar
+                 android:id="@+id/progressBar2"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_marginTop="0dp"
+                 android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+                 android:indeterminate="false"
+                 android:max="100"
+                 android:progressDrawable="@drawable/custom_progressbar_drawable"
+                 android:minHeight="25dp"
+                 android:minWidth="200dp"
+                 android:progress="0"
+                 android:layout_margin="5dp"
+                 android:layout_centerInParent="true"/>
+
+                     <TextView
+                         android:id="@+id/txt_Porcent_Progress2"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignBottom="@+id/progressBar2"
+                         android:layout_centerInParent="true"
+                         android:text="0%"
+                         android:textAppearance="?android:attr/textAppearanceSmall"
+
+                         android:textColor="#ffffff" />
+</RelativeLayout>
+
+                 <TextView
+                     android:id="@+id/txv_DetalleProgreso2"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+
+                     android:layout_marginTop="10dp"
+                     android:layout_weight="0.00"
+                     android:lines="2"
+                     android:text="CLIENTES"
+                     android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EAF1F6"/>
+
+
+                          <LinearLayout
+        android:id="@+id/linearLayout_Depositos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+                             android:background="@drawable/layout_redondeado2"
+        android:orientation="horizontal" >
+  <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+      <ProgressBar
+          android:id="@+id/progressBar3"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="0dp"
+          android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+          android:indeterminate="false"
+          android:max="100"
+          android:minHeight="25dp"
+          android:minWidth="200dp"
+          android:progress="0"
+          android:layout_margin="5dp"
+          android:progressDrawable="@drawable/custom_progressbar_drawable" />
+
+      <TextView
+          android:id="@+id/txt_Porcent_Progress3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/progressBar3"
+          android:layout_centerInParent="true"
+          android:text="0%"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+
+          android:textColor="#ffffff" />
+</RelativeLayout>
+
+                              <TextView
+                                  android:id="@+id/txv_DetalleProgreso3"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="10dp"
+                                  android:layout_weight="0.00"
+                                  android:lines="2"
+                                  android:text="CUENTAS POR COBRAR"
+                                  android:textColor="#ffffff" />
+        
+          </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EAF1F6"/>
+
+
+                 <LinearLayout
+        android:id="@+id/linearLayout_InfoClientes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+                    android:background="@drawable/layout_redondeado2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+        <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="0dp"
+                android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+                android:indeterminate="false"
+                android:max="100"
+                android:minHeight="25dp"
+                android:minWidth="200dp"
+                android:progress="0"
+                android:layout_margin="5dp"
+                android:progressDrawable="@drawable/custom_progressbar_drawable"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txt_Porcent_Progress4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar4"
+                android:layout_centerInParent="true"
+                android:text="0%"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:textColor="#ffffff" />
+</RelativeLayout>
+
+                     <TextView
+                         android:id="@+id/txv_DetalleProgreso4"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+
+                         android:layout_marginTop="10dp"
+                         android:layout_weight="0.00"
+                         android:lines="2"
+                         android:text="PARAMETROS"
+                         android:textColor="#ffffff" />
+        
+          </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EAF1F6"/>
+
+
+                 <LinearLayout
+        android:id="@+id/linearLayout_Bancos"
+        android:layout_width="fill_parent"
+                    android:background="@drawable/layout_redondeado2"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+ <RelativeLayout
+      android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+     <ProgressBar
+         android:id="@+id/progressBar5"
+         style="?android:attr/progressBarStyleHorizontal"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_centerInParent="true"
+         android:layout_marginTop="0dp"
+         android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+         android:indeterminate="false"
+         android:max="100"
+         android:minHeight="25dp"
+         android:minWidth="200dp"
+         android:progress="0"
+         android:layout_margin="5dp"
+         android:progressDrawable="@drawable/custom_progressbar_drawable"
+         android:textColor="#000000" />
+
+     <TextView
+         android:id="@+id/txt_Porcent_Progress5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/progressBar5"
+         android:layout_centerInParent="true"
+         android:text="0%"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+
+         android:textColor="#ffffff" />
+</RelativeLayout>
+
+                     <TextView
+                         android:id="@+id/txv_DetalleProgreso5"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+
+                         android:layout_marginTop="10dp"
+                         android:layout_weight="0.00"
+                         android:lines="2"
+                         android:text="BANCOS"
+                         android:textColor="#ffffff" />
+        
+          </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EAF1F6"/>
+
+           <LinearLayout
+        android:id="@+id/linearLayout_RazonesNoVisita"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+              android:background="@drawable/layout_redondeado2"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/progressBar6"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/custom_progressbar_drawable"
+            android:minHeight="25dp"
+            android:minWidth="200dp"
+            android:progress="0"
+            android:layout_margin="5dp"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/txt_Porcent_Progress6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/progressBar6"
+            android:layout_centerInParent="true"
+            android:text="0%"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            android:textColor="#ffffff" />
+</RelativeLayout>
+
+               <TextView
+                   android:id="@+id/txv_DetalleProgreso6"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:layout_marginTop="10dp"
+                   android:layout_weight="0.00"
+                   android:lines="2"
+                   android:text="RAZONES NO VISITA"
+                   android:textColor="#ffffff" />
+        
+          </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EAF1F6"/>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Ubicacion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:background="@drawable/layout_redondeado2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/progressBar8"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+                android:indeterminate="false"
+                android:max="100"
+                android:progressDrawable="@drawable/custom_progressbar_drawable"
+                android:minHeight="25dp"
+                android:minWidth="200dp"
+                android:progress="0"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/txt_Porcent_Progress8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/progressBar8"
+                    android:layout_centerInParent="true"
+                    android:text="0%"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+
+                    android:textColor="#ffffff" />
+</RelativeLayout>
+
+            <TextView
+                android:id="@+id/txv_DetalleProgreso8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.00"
+                android:lines="2"
+                android:text="UBICACIONES DE COSTA RICA"
+                android:textColor="#ffffff" />
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EAF1F6"/>
+        <LinearLayout
+            android:id="@+id/linearLayout_Facturas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:background="@drawable/layout_redondeado2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/progressBar9"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:contentDescription="Progreso de Actualizacion de ARTICULOS"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/custom_progressbar_drawable"
+                    android:minHeight="25dp"
+                    android:minWidth="200dp"
+                    android:progress="0"
+                    android:layout_margin="5dp"
+                    android:textColor="#000000"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/txt_Porcent_Progress9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/progressBar9"
+                    android:layout_centerInParent="true"
+                    android:text="0%"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txv_DetalleProgreso9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.00"
+                android:lines="2"
+                android:text="Facturas"
+                android:textColor="#ffffff" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="#EAF1F6"/>
+
+    </LinearLayout>
+          
+  </ScrollView>
+
+</RelativeLayout>

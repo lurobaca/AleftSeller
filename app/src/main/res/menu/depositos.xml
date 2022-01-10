@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_GUARDAR"
+        android:icon="@android:drawable/ic_menu_save"
+        android:showAsAction="always"
+        android:title="GUARDAR"/>
+
+    <item android:id="@+id/item_ELIMINAR" android:title="ELIMINAR"></item>
+    <item android:id="@+id/item_NUEVO" android:title="NUEVO"></item>
+
+</menu>

@@ -1,0 +1,372 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/layoutTabla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutFiltros"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#284072"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#284072"
+                android:orientation="horizontal"
+                android:textColor="#000000">
+
+
+                <EditText
+                    android:id="@+id/edt_Cliente"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.08"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center">
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_Cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/mybutton"
+                    android:onClick="Clientes"
+                    android:text="Clientes"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#284072"
+                android:orientation="horizontal"
+                android:textColor="#000000">
+
+
+                <EditText
+                    android:id="@+id/edt_Proveedor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.08"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center">
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_Proveedor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/mybutton"
+                    android:onClick="Proveedor"
+                    android:text="Proveedor"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#284072"
+                android:orientation="horizontal"
+                android:textColor="#000000">
+
+
+                <EditText
+                    android:id="@+id/edt_Articulo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.08"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center">
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_Articulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/mybutton"
+                    android:onClick="Articulo"
+                    android:text="Articulo"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#284072"
+                android:orientation="horizontal"
+                android:textColor="#000000">
+
+
+                <EditText
+                    android:id="@+id/edt_Marca"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.08"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center">
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_Marca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/mybutton"
+                    android:onClick="Marca"
+                    android:text="Marca"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#284072"
+                android:orientation="horizontal"
+                android:textColor="#000000">
+
+
+                <EditText
+                    android:id="@+id/edt_FINI"
+                    android:layout_width="151dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.08"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center">
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_FINI"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/mybutton"
+                    android:onClick="FINI"
+                    android:text="Desde"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_FFIN"
+                    android:layout_width="162dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="0.08"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center">
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_FFIN"
+                    android:layout_width="51dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/mybutton"
+                    android:onClick="FFIN"
+                    android:text="Hasta"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#284072"
+                android:orientation="horizontal"
+                android:textColor="#000000">
+
+
+                <CheckBox
+                    android:id="@+id/CboxDetallado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.08"
+                    android:text="Detallado"
+                    android:textColor="#FFF" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/scrollhorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:id="@+id/Panellistad2"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:textColor="#000000">
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"></ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="#284072"
+            android:drawableTop="@android:color/black"
+            android:orientation="horizontal"
+            android:textColor="#000000">
+
+            <Button
+                android:id="@+id/btn_Nuevo11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/mybutton"
+                android:onClick="NuevaLinea"
+                android:padding="3dp"
+                android:text="AGREGAR"
+                android:textColor="#000000"
+                android:textSize="15sp"
+
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL : ₵"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/TXT_MONTO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/BarChar1"
+            android:layout_weight="1"/>
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/PieChar1"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

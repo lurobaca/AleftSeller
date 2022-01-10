@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item1"
+        android:icon="@android:drawable/ic_menu_delete"
+          android:title="Eliminar"
+        android:showAsAction="always"></item>
+
+    <item android:id="@+id/item2"
+        android:title="Calcula"
+        android:icon="@drawable/ic_calculadora_white"
+        android:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/item3"
+        android:title="Agrega"
+        android:icon="@drawable/ic_control_add_white"
+        app:showAsAction="always" ></item>
+
+
+
+
+
+</menu>

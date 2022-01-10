@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.essco.seller">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Sincronización -->
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <!-- Autenticación -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:label="Seller">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".PEDIDOS"
+            android:label="@string/title_activity_pedidos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".CUENTASXCOBRAR"
+            android:label="@string/title_activity_cuentasxcobrar"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".ENVIAR"
+            android:label="@string/title_activity_enviar"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".RECIBIR"
+            android:label="@string/title_activity_recibir"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".INFO_CLIENTES"
+            android:label="@string/title_activity_info__clientes"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".REPORTES"
+            android:label="@string/title_activity_reportes"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".ELIMINAR"
+            android:label="@string/title_activity_eliminar"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".DEPOSITOS"
+            android:label="@string/title_activity_depositos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".NewLinea"
+            android:label="@string/title_activity_new_linea"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name=".DetallePedido"
+            android:label="@string/title_activity_detalle_pedido"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".PedidosHechos"
+            android:label="@string/title_activity_pedidos_hechos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Clientes"
+            android:label="@string/title_activity_clientes"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".RECUPERA_PEDIDO"
+            android:label="@string/title_activity_recupera__pedido"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".DetallePago"
+            android:label="@string/title_activity_detalle_pago"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".FacturasCliente"
+            android:label="@string/title_activity_facturas_cliente"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".New_Pago"
+            android:label="@string/title_activity_new__pago"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name=".PagosHechos"
+            android:label="@string/title_activity_pagos_hechos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Detallepago"
+            android:label="@string/title_activity_detallepago"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Detpago"
+            android:label="@string/title_activity_detpago"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Ftp_Manager"
+            android:label="@string/title_activity_ftp__manager"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Depositos_Hechos"
+            android:label="@string/title_activity_depositos__hechos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".ClientesSinAtender"
+            android:label="@string/title_activity_clientes_sin_atender"
+            android:supportsRtl="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".AcercaDe"
+            android:label="@string/title_activity_acerca_de"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Liquidar"
+            android:label="@string/title_activity_liquidar"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".SelecFacturas"
+            android:label="@string/title_activity_selec_facturas"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Facturas"
+            android:label="@string/title_activity_facturas"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".SinAtender_Hechos"
+            android:label="@string/title_activity_sin_atender__hechos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Liquidacion"
+            android:label="@string/title_activity_liquidacion"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Gastos"
+            android:label="@string/title_activity_gastos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".GastosEnPromo"
+            android:label="@string/title_activity_gastos_en_promo"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".GastosLiquidacion"
+            android:label="@string/title_activity_gastos_liquidacion"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".DetalleGastosLiqu"
+            android:label="@string/title_activity_detalle_gastos_liqu"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".GastosHechos"
+            android:label="@string/title_activity_gastos_hechos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Devoluciones"
+            android:label="@string/title_activity_devoluciones"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Detalle_Devoluciones"
+            android:label="@string/title_activity_detalle__devoluciones"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Devoluciones_Hechas"
+            android:label="@string/title_activity_devoluciones__hechas"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".Descuentos"
+            android:label="@string/title_activity_descuentos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".DetalleFactura"
+            android:label="@string/title_activity_detalle_factura"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".RepFacturas"
+            android:label="@string/title_activity_rep_facturas"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".NotasCredito_Hechas"
+            android:label="@string/title_activity_notas_credito__hechas"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".DetalleDevolucion"
+            android:label="@string/title_activity_detalle_devolucion"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity
+            android:name=".LineaDevolucion"
+            android:label="@string/title_activity_linea_devolucion"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name=".MenuPrueba"
+            android:label="@string/title_activity_menu_prueba"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name=".GastosActivity"
+            android:label="@string/title_activity_gastos"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+        <activity android:name=".Analisis"
+            android:label="@string/title_activity_analisis"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            />
+        <!-- ACTIVIDAD DE INSERCIÓN -->
+        <activity
+            android:name=".ui.InsertActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".ui.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.essco.seller.ui.MainActivity" />
+        </activity>
+
+        <!-- PROVIDER -->
+        <provider
+            android:name=".provider.ProviderDeGastos"
+            android:authorities="@string/provider_authority"
+            android:exported="false"
+            android:syncable="true" />
+        <!-- PROVIDER -->
+
+
+        <!-- SERVICIO DE AUTENTICACIÓN -->
+        <service android:name=".sync.AuthenticationService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <!-- SERVICIO DE SINCRONIZACIÓN -->
+        <service
+            android:name=".sync.SyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_adapter" />
+        </service>
+
+        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+        <receiver
+            android:name=".ConnectivityChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".DatosClientes"
+            android:label="@string/title_activity_datos_clientes" />
+        <activity android:name=".Info_ClientesHechos" />
+        <activity android:name=".Venta" />
+
+
+    </application>
+
+</manifest>

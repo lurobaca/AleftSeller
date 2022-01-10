@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+    android:background="@drawable/border"
+   android:paddingBottom="1dip"
+ >
+  
+      <LinearLayout
+           android:id="@+id/box"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:background="#EAF1F6"
+          android:orientation="horizontal"
+          android:padding="5dp"
+          android:textColor="#ffffff" >
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_gravity="center_vertical|left"
+              android:layout_weight="8.27"
+              android:orientation="vertical"
+              android:padding="5dp" >
+
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="5dp"
+                  android:shape="rectangle" >
+
+                  <LinearLayout
+                      android:id="@+id/linearLayout1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical" >
+
+                      <TextView
+                          android:id="@+id/TXTV_VALOR1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical|left"
+                          android:text="#Fac:\n748239"
+                          android:textColor="#000000"
+                          android:textStyle="bold" />
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:id="@+id/linearLayout2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical" >
+
+                      <TextView
+                          android:id="@+id/TXTV_VALOR2"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical|center"
+                          android:text="Venc:\n19/03/2015"
+                          android:textColor="#000000"
+                          android:textSize="12sp"
+                          android:textStyle="italic" />
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:id="@+id/linearLayout3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical" >
+
+                      <TextView
+                          android:id="@+id/TXTV_VALOR3"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical|right"
+                          android:layout_marginRight="1dp"
+                          android:text="Fecha:\n04/02/2015"
+                          android:textColor="#000000"
+                          android:textSize="14sp"
+                          android:textStyle="italic" />
+                  </LinearLayout>
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical|right"
+                  android:orientation="horizontal"
+                  android:padding="5dp"
+                  android:shape="rectangle" >
+
+                  <LinearLayout
+                      android:id="@+id/linearLayout4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical" >
+
+                      <TextView
+                          android:id="@+id/TXTV_VALOR4"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical|left"
+                          android:text="Total:\n294,639.13"
+                          android:textColor="#000000"
+                          android:textStyle="bold" />
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:id="@+id/linearLayout5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical" >
+
+                      <TextView
+                          android:id="@+id/TXTV_VALOR5"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical|center"
+                          android:text="Abono:\n0"
+                          android:textColor="#000000"
+                          android:textSize="12sp"
+                          android:textStyle="italic" />
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:id="@+id/linearLayout6"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical" >
+
+                      <TextView
+                          android:id="@+id/TXTV_VALOR6"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical|right"
+                          android:layout_marginRight="1dp"
+                          android:text="Saldo;\n294,629.13"
+                          android:textColor="#000000"
+                          android:textSize="14sp"
+                          android:textStyle="italic" />
+                  </LinearLayout>
+              </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="45dp"
+              android:layout_height="fill_parent"
+              android:layout_alignParentRight="true"
+              android:orientation="vertical"
+              android:padding="0dp" >
+
+              <CheckBox
+                  android:id="@+id/CheckBox01"
+                  android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_marginRight="6dp"
+                  android:layout_weight="0.05"
+                  android:background="#EAF1F6"
+                  android:focusable="false"
+                  android:padding="15dp" />
+          </LinearLayout>
+      </LinearLayout>
+
+</RelativeLayout>

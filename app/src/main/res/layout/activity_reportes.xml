@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC"
+    tools:context="${relativePackage}.${activityClass}" >
+   <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:textColor="#ffffff" >
+
+   
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#F5F5DC"
+            android:orientation="horizontal"
+            android:textColor="#000000" >
+
+            <TextView
+                android:id="@+id/txt_FechaIni"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="Fecha INI"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_FechaIni"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:ems="10" 
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:enabled="FALSE"
+                android:focusable="false"
+                  android:background="@drawable/rounded_edittext"
+                android:focusableInTouchMode="false"
+                >
+
+           
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_FechaIni"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="1dp"
+                android:background="#B9A37A"
+                android:onClick="fechaIni"
+                android:text="Fecha"
+                android:textColor="#F5F5DC" />
+            
+         </LinearLayout>
+       
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#F5F5DC"
+            android:orientation="horizontal"
+            android:textColor="#000000" >
+
+            <TextView
+                android:id="@+id/txt_FechaFin"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="0.49"
+                android:text="Fecha FIN"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_FechaFin"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:ems="10" 
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:enabled="FALSE"
+                android:focusable="false"
+                  android:background="@drawable/rounded_edittext"
+                android:focusableInTouchMode="false"
+                >
+
+           
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_FechaFin"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="1dp"
+                android:background="#B9A37A"
+                android:onClick="FechaFin"
+                android:text="Fecha"
+                android:textColor="#F5F5DC" />
+            
+         </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#F5F5DC"
+            android:orientation="horizontal"
+            android:textColor="#000000" >
+    
+     
+            
+        </LinearLayout>
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#F5F5DC"
+            android:orientation="horizontal"
+            android:textColor="#000000" >
+
+                  
+
+                    <TextView
+                      android:id="@+id/textView0"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.49"
+                      android:text="SELECCION UN REPORTE"
+                        android:textAlignment="center"
+                         android:layout_marginTop="10dp"
+                     android:textSize="20sp" />
+
+        </LinearLayout>
+        
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#F5F5DC"
+            android:orientation="horizontal"
+            android:textColor="#000000" >   
+              
+                    <RadioGroup
+                         android:id="@+id/RadBtnG_1"
+			        android:layout_width="fill_parent"
+				      android:layout_height="wrap_content"
+			        android:layout_below="@+id/text"
+			       
+			           android:background="#F5F5DC"
+			        android:checkedButton="@+id/sound"
+			         android:orientation="horizontal" >
+        
+              <RadioButton
+                  android:id="@+id/RadBtn_PEDIDOS"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.49"
+                  android:text="PEDIDO"
+                  android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/RadBtn_PAGOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:text="PAGO"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/RadBtn_DEPOSITOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:text="DEPOSITO"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/RadBtn_NOVISITAS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="VISITA"
+                android:textSize="11sp" />
+       
+</RadioGroup>
+            </LinearLayout>
+                
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#F5F5DC"
+            android:orientation="horizontal"
+            android:textColor="#000000" >
+
+                  
+
+                    <TextView
+                      android:id="@+id/textView1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.49"
+                      android:text="TIPO DE REPORTE"
+                        android:textAlignment="center"
+                             android:layout_marginTop="10dp"
+                      android:textSize="20sp" />
+
+        </LinearLayout>
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#F5F5DC"
+            android:orientation="horizontal"
+            android:textColor="#000000" >
+
+                  
+
+            <CheckBox
+                android:id="@+id/CHBOX_RepDetallado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:text="GENERAL" />
+
+            <CheckBox
+                android:id="@+id/CHBOX_RepGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:text="DETALLADO" />
+
+        </LinearLayout>
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="558"
+            android:background="#F5F5DC"
+            android:orientation="vertical"
+            android:textColor="#000000" >
+
+          
+      <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#000000"
+                android:textColor="#ffffff" >
+  </ListView>
+        </LinearLayout>
+        
+      
+
+      
+  </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

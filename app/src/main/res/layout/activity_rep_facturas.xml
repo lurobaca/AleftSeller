@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+     >
+
+<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+       
+        android:orientation="vertical"
+        android:textColor="#ffffff" 
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="#284072"
+            android:orientation="horizontal"
+            android:textColor="#000000" 
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/mybutton"
+                android:onClick="Limpia"
+                android:text="Limpia" />
+
+            <EditText
+                android:id="@+id/edt_BUSCAPALABRA"
+                android:layout_width="145dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                  android:layout_marginRight="2dp"
+                android:layout_weight="0.65"
+                android:padding="3dp"
+                android:ems="10" 
+              
+                 android:background="@drawable/rounded_edittext"
+              >
+
+                <requestFocus />
+            </EditText>
+          
+            <CheckBox
+                android:id="@+id/Cb_Cod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/check_false"
+                android:text="Codigo"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+            
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:background="#284072"
+            android:orientation="horizontal"
+            android:textColor="#ffffff" 
+            android:padding="3dp"
+            android:layout_marginTop="0dp"
+             android:visibility="gone "
+              >
+
+            <TextView
+                android:id="@+id/txtv_TotalPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:textSize="13sp"
+                android:text="TOTAL : ₵" 
+                 android:textColor="#ffffff" />
+               <TextView
+                android:id="@+id/txtv_MontoTotalPago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:text="0.0" 
+                 android:textSize="16sp"
+                 android:textAppearance= "?android:attr/textAppearanceLarge"
+                  android:textColor="#ffffff" />
+
+               <CheckBox
+                   android:id="@+id/Cb_Precio"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:button="@drawable/check_false"
+                   android:text="Precio"
+                   android:textColor="#ffffff"
+                   android:textSize="13sp" />
+
+    </LinearLayout>
+    
+         
+ <HorizontalScrollView android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:textColor="#000000" >
+        </ListView>
+              </HorizontalScrollView>
+            
+      </LinearLayout>
+
+</RelativeLayout>

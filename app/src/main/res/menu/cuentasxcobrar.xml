@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+  <item android:id="@+id/item1" android:title="GUARDAR"
+      android:icon="@android:drawable/ic_menu_save"
+      android:showAsAction="always"
+      ></item>
+    <item android:id="@+id/item2"
+        android:icon="@drawable/ic_print_white_24px"
+        android:title="IMPRIMIR"
+        android:showAsAction="always"
+        ></item>
+    <item android:id="@+id/item3" android:title="NUEVO"></item>
+  <item android:id="@+id/item4" android:title="PDF"></item>
+  <item android:id="@+id/item5" android:title="ANULADO"></item>
+
+
+</menu>

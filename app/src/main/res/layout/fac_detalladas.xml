@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+     android:id="@+id/Box"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+ >
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:orientation="horizontal" 
+    android:textColor="#000000"
+    android:background="#ffffff" 
+    android:shape="rectangle">
+ 
+  <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+        <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label"
+        android:textSize="15sp" 
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical|left">
+        </TextView>
+  </LinearLayout> 
+  
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+         
+        <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label"
+        android:textSize="15sp" 
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical|center">
+        </TextView>
+   </LinearLayout> 
+  
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+        <TextView
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label"
+        android:textSize="15sp" 
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical|right">
+    </TextView>
+    
+        </LinearLayout> 
+  
+ 
+</LinearLayout>
+<LinearLayout 
+ 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp"
+    android:color="#000000"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+      <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+            android:layout_weight="1">
+        
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label"
+        android:layout_marginRight="1dp"
+        android:textSize="14sp" 
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical|left" >
+    </TextView>
+    
+     </LinearLayout> 
+    
+      <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+     <TextView
+        android:id="@+id/label5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label"
+        android:layout_marginRight="1dp"
+        android:textSize="14sp" 
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical|center" >
+    </TextView>
+    
+         </LinearLayout> 
+         
+      <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+         <TextView
+        android:id="@+id/label6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label"
+        android:layout_marginRight="0dp"
+        android:textSize="14sp" 
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_gravity="center_vertical|right" >
+    </TextView>
+            </LinearLayout> 
+    
+    </LinearLayout>
+    
+</LinearLayout>

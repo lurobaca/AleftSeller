@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#ffffff" >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:textColor="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#284072"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#ffffff"
+                android:text="CLIENTE"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/edt_buscarDevolucion"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.22"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:padding="3dp" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textColor="#000000"
+        android:background="#284072"  >
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="4dp"
+            android:background="#284072">
+
+            <TextView
+                android:id="@+id/txtv_PostFecha"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="CLIENTE"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_margin="2dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/edit_PostFecha"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="0.55"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:padding="2dp"
+                android:textColor="#000000">
+
+                <requestFocus />
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_pickDate"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/mybutton"
+                android:onClick="Limpiar"
+                android:text="Fecha"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="4dp"
+            android:background="#284072">
+
+            <TextView
+                android:id="@+id/lbl_Cliente"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="CLIENTE"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_margin="2dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/edt_buscarModificacion"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="0.55"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:padding="2dp"
+                android:textColor="#000000">
+
+                <requestFocus />
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_Limpia"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/mybutton"
+                android:onClick="Limpiar"
+                android:text="Limpiar"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <HorizontalScrollView android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff"
+                android:layout_marginBottom="15dp"
+                android:paddingBottom="25dp" >
+
+            </ListView>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

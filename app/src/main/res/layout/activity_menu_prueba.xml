@@ -1,0 +1,990 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.essco.seller.MenuPrueba"
+	android:background="#B2D8EE"
+    >
+	<ScrollView
+		android:id="@+id/sView"
+
+		android:layout_width="match_parent"
+		android:layout_height="700dp"
+		android:layout_centerHorizontal="true" >
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+
+		>
+
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="center_horizontal"
+		>
+
+	<LinearLayout
+		android:layout_width="@dimen/boxw"
+		android:layout_height="@dimen/boxh"
+		android:orientation="vertical"
+		android:layout_margin="@dimen/boxmargin"
+		android:onClick="PEDIDOS"
+		android:background="@drawable/boxmenu">
+
+		<LinearLayout
+			android:layout_width="@dimen/boxw"
+			android:layout_height="@dimen/boxh"
+
+			android:orientation="vertical"
+			>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+
+				android:orientation="vertical"
+				android:padding="2dp">
+
+				<ImageView
+
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_gravity="center"
+					android:layout_marginTop="15dp"
+					android:src="@drawable/btpedi"></ImageView>
+
+
+				<TextView
+					android:layout_centerHorizontal="true"
+
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="5dp"
+
+
+					android:text="PEDIDOS"
+					android:textAlignment="center"
+					android:textColor="#ffffff"
+					android:textSize="@dimen/boxtextsize"></TextView>
+
+
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="@dimen/boxw"
+		android:layout_height="@dimen/boxh"
+		android:orientation="vertical"
+		android:onClick="SIN_ATENDER"
+		android:layout_margin="@dimen/boxmargin"
+		android:background="@drawable/boxmenu">
+
+		<LinearLayout
+			android:layout_width="@dimen/boxw"
+			android:layout_height="@dimen/boxh"
+
+			android:orientation="vertical"
+			>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+
+				android:orientation="vertical">
+
+				<ImageView
+
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="15dp"
+					android:src="@drawable/btnovisitaclientes"></ImageView>
+
+
+				<TextView
+					android:layout_width="wrap_content"
+
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="5dp"
+
+
+					android:text="SIN ATENDER"
+					android:textAlignment="center"
+					android:textColor="#ffffff"
+					android:textSize="@dimen/boxtextsize"></TextView>
+
+
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="@dimen/boxw"
+			android:layout_height="@dimen/boxh"
+			android:orientation="vertical"
+			android:onClick="DEVOLUCION"
+			android:layout_margin="@dimen/boxmargin"
+			android:background="@drawable/boxmenu">
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+
+				android:orientation="vertical"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+
+					android:orientation="vertical"
+					android:padding="2dp">
+
+					<ImageView
+
+						android:layout_width="40dp"
+						android:layout_gravity="center"
+						android:layout_height="40dp"
+						android:layout_marginTop="15dp"
+						android:src="@drawable/devoluciones"></ImageView>
+
+
+					<TextView
+						android:layout_width="wrap_content"
+
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="5dp"
+
+
+						android:text="DEVOLUCION"
+						android:textAlignment="center"
+						android:textColor="#ffffff"
+						android:textSize="@dimen/boxtextsize"></TextView>
+
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="center_horizontal">
+
+		<LinearLayout
+			android:layout_width="@dimen/boxw"
+			android:layout_height="@dimen/boxh"
+			android:orientation="vertical"
+			android:onClick="COBROS"
+			android:layout_margin="@dimen/boxmargin"
+			android:background="@drawable/boxmenu">
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+
+				android:orientation="vertical"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+
+					android:orientation="vertical"
+					android:padding="2dp">
+
+					<ImageView
+
+						android:layout_width="40dp"
+						android:layout_gravity="center"
+						android:layout_height="40dp"
+						android:layout_marginTop="15dp"
+						android:src="@drawable/btcobro"></ImageView>
+
+
+					<TextView
+						android:layout_width="wrap_content"
+
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="5dp"
+
+
+						android:text="COBROS"
+						android:textAlignment="center"
+						android:textColor="#ffffff"
+						android:textSize="@dimen/boxtextsize"></TextView>
+
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="@dimen/boxw"
+			android:layout_height="@dimen/boxh"
+			android:orientation="vertical"
+			android:onClick="GASTOS"
+			android:layout_margin="@dimen/boxmargin"
+			android:background="@drawable/boxmenu">
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+
+				android:orientation="vertical"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+
+					android:orientation="vertical"
+					android:padding="2dp">
+
+					<ImageView
+
+						android:layout_width="40dp"
+						android:layout_gravity="center"
+						android:layout_height="40dp"
+						android:layout_marginTop="15dp"
+						android:src="@drawable/btgastos"></ImageView>
+
+
+					<TextView
+						android:layout_width="wrap_content"
+
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="5dp"
+
+
+						android:text="GASTOS"
+						android:textAlignment="center"
+						android:textColor="#ffffff"
+						android:textSize="@dimen/boxtextsize"></TextView>
+
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="@dimen/boxw"
+			android:layout_height="@dimen/boxh"
+			android:orientation="vertical"
+			android:onClick="DEPOSITOS"
+			android:layout_margin="@dimen/boxmargin"
+			android:background="@drawable/boxmenu">
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+
+					android:orientation="vertical"
+					android:padding="2dp">
+
+					<ImageView
+
+						android:layout_width="40dp"
+						android:layout_gravity="center"
+						android:layout_height="40dp"
+						android:layout_marginTop="15dp"
+						android:src="@drawable/btdepositos"></ImageView>
+
+
+					<TextView
+						android:layout_centerHorizontal="true"
+
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="5dp"
+
+
+						android:text="DEPOSITOS"
+						android:textAlignment="center"
+						android:textColor="#ffffff"
+						android:textSize="@dimen/boxtextsize"></TextView>
+
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+
+
+	</LinearLayout>
+
+
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal">
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:onClick="CLIENTES"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/btclientes"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="CLIENTES"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:onClick="LIQUIDAR"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/btliquidar"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="LIQUIDAR"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:onClick="ANALISIS"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/analisis"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="ANALISIS"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal"
+
+			>
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+					android:onClick="ENVIAR"
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/btenvio"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="ENVIAR"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+					android:onClick="ACTUALIZAR"
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/btactualiza"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="ACTUALIZAR"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+					android:onClick="ELIMINAR"
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/btelimina"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="ELIMINAR"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal"
+
+			>
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+					android:onClick="AJUSTES"
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/btconfig"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="AJUSTES"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:onClick="BACKUP"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/backupdb"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="BACKUP "
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:onClick="RESTAURAR"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/restaurardb"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="RESTAURAR"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal"
+
+			>
+
+
+
+			<LinearLayout
+				android:layout_width="@dimen/boxw"
+				android:layout_height="@dimen/boxh"
+				android:orientation="vertical"
+				android:onClick="ACERCA_DE"
+				android:layout_margin="@dimen/boxmargin"
+				android:background="@drawable/boxmenu">
+
+				<LinearLayout
+					android:layout_width="@dimen/boxw"
+					android:layout_height="@dimen/boxh"
+
+					android:orientation="vertical"
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+
+						android:orientation="vertical"
+						android:padding="2dp">
+
+						<ImageView
+
+							android:layout_width="40dp"
+							android:layout_gravity="center"
+							android:layout_height="40dp"
+							android:layout_marginTop="15dp"
+							android:src="@drawable/logo"></ImageView>
+
+
+						<TextView
+							android:layout_width="wrap_content"
+
+							android:layout_height="wrap_content"
+							android:layout_centerHorizontal="true"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginTop="5dp"
+
+
+							android:text="ACERCA DE"
+							android:textAlignment="center"
+							android:textColor="#ffffff"
+							android:textSize="@dimen/boxtextsize"></TextView>
+
+
+					</LinearLayout>
+
+					<ScrollView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical" />
+					</ScrollView>
+				</LinearLayout>
+			</LinearLayout>
+
+
+
+
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+
+	</ScrollView>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+android:layout_margin="-5dp"
+		android:orientation="vertical"
+		android:textColor="#ffffff"
+		android:background="#284072"
+		android:visibility="gone"
+		android:id="@+id/Novedades"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="5dp"
+
+
+			android:text="NOVEDADES DE LA VERSION"
+			android:textAlignment="center"
+			android:textColor="#ffffff"
+			android:textSize="@dimen/boxtextsize"></TextView>
+
+
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+
+		android:orientation="horizontal"
+		android:textColor="#ffffff"
+		android:background="#284072"
+
+		>
+		<Button
+			android:id="@+id/btn_Yalovi"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:layout_margin="1dp"
+			android:background="@drawable/mybutton"
+			android:onClick="Visto"
+			android:gravity="center"
+			android:text="VISTO"
+			android:textColor="#000000"
+			android:textSize="15sp" />
+
+		<Button
+			android:id="@+id/btn_Yalovi2"
+			android:layout_width="200dp"
+
+			android:layout_height="45dp"
+			android:layout_margin="1dp"
+			android:background="@drawable/mybutton"
+			android:onClick="VerMasTarde"
+			android:text="VER MAS TARDE"
+			android:textColor="#000000"
+			android:textSize="15sp" />
+
+	</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

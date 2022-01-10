@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+     android:background="#F5F5DC">
+     
+        
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+          
+            android:orientation="horizontal"
+          android:textColor="#000000"
+          android:background="#284072">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FACTURA"
+                android:layout_margin="1dp"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                 />
+
+            <EditText
+                android:id="@+id/edt_BUSCAPALABRA"
+                android:layout_width="145dp"
+                android:layout_height="30dp"
+                android:layout_margin="1dp"
+                android:layout_weight="0.65"
+                android:ems="10"
+                android:padding="1dp"
+                 android:inputType="number"
+                 android:background="#ffffff">
+
+                <requestFocus />
+            </EditText>
+
+           
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+     
+            android:orientation="horizontal"
+                android:textColor="#000000"
+          android:background="#284072">
+
+            <TextView
+                android:id="@+id/txtv_TotalSaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                     android:textColor="#ffffff"
+                     android:layout_margin="1dp"
+                android:text="TOTAL : ₵" />
+
+               <TextView
+                   android:id="@+id/txtv_MontoTotalSaldo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.11"
+                   android:text="0.0"
+                        android:textColor="#ffffff"
+                           android:layout_margin="1dp"
+                   android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout> 
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               android:textColor="#000000"
+          android:background="#284072"
+            android:orientation="horizontal"
+            >   
+               <TextView
+                android:id="@+id/txtv_TotalSeleccionado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:text="SELEC : ₵"
+                   android:layout_margin="1dp"
+                     android:textColor="#ffffff" />
+
+               <TextView
+                   android:id="@+id/txtv_MontoTotalSelecconado"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.11"
+                   android:text="0.0"
+                        android:textColor="#ffffff"
+                           android:layout_margin="1dp"
+                   android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#284072"
+            android:orientation="vertical"
+            android:textColor="#ffffff"
+            android:padding="2dp" >
+         <Button
+                android:id="@+id/btn_Pagar"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="PAGAR" 
+                android:layout_margin="1dp"
+         
+                   android:onClick="Pagar"
+              android:background="@drawable/mybutton"
+               android:textColor="#000000"/>
+         </LinearLayout>
+    <ListView 
+       android:id="@+id/mainListView"
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+          android:background="#EAF1F6"
+            android:textColor="#000000" 
+     
+          ></ListView>
+
+</LinearLayout>
+
+   
+
+</RelativeLayout>

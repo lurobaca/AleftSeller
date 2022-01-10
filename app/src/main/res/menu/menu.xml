@@ -1,0 +1,21 @@
+<!-- <menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+</menu>-->
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- Search, should appear as action button -->
+    <!--<item android:id="@+id/action_sincronizar"
+
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="@string/action_sincronizar"
+        android:showAsAction="never"
+        />
+    android:icon="@android:drawable/presence_offline"-->
+    <!--android:icon="@android:drawable/presence_online"-->
+    <!--android:icon="@android:drawable/ic_menu_save"-->
+</menu>
